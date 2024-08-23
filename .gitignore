@@ -1,10 +1,10 @@
 # Ignore all files in the output folder and its subfolders
 output/**/*
-!output/**/.gitkeep
+
 
 # Ignore all files in the sources folder and its subfolders
 sources/**/*.*
-!sources/**/.gitkeep
+
 
 # Ignore hash files
 hash_cache.json
