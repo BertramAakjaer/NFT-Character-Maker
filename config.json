@@ -1,0 +1,20 @@
+{
+    "subfolder_categories": {
+      "hats_procentage": 0.5,
+      "eyes_procentage": 0.5,
+      "mouth_procentage": 0.4,
+      "chest_procentage": 0.2
+    },
+
+    "rarity_procentage": {
+        "common_procentage": 0.5,
+        "uncommon_procentage": 0.3,
+        "rare_procentage": 0.2,
+        "epic_procentage": 0.1,
+        "legendary_procentage": 0.01,
+        "rnjesus_procentage": 0.001
+    },
+
+    "path": "Z:\\Random\\output",
+    "is_active": true
+  }
