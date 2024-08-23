@@ -9,7 +9,9 @@ sources/**/*.*
 # Ignore hash files
 hash_cache.json
 
-
+!*/.gitkeep
+!*/*/.gitkeep
+!*/*/*/.gitkeep
 
 
 
