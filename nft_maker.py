@@ -177,6 +177,11 @@ def delete_cache():
     output_dir = new_output_path 
     
   file_list = os.listdir(output_dir)
+
+  for i in file_list:
+    if ".gitkeep" in i:
+      file_list.remove(i)
+
   for file_name in file_list:
     file_path = os.path.join(output_dir, file_name)
     if os.path.isfile(file_path):
@@ -219,9 +224,22 @@ def main():
           folders_to_choose_search.append(i)
       
       for i in folders_to_choose_search:
-        if os.listdir(i) == []:
+        if len(os.listdir(i)) == 1:
           continue
-        image_arr.append(os.path.join(i, ra.choice(os.listdir(i))))
+
+        not_gitkeep = False
+        temp_file = ""
+
+        while not not_gitkeep:
+            temp_file = ra.choice(os.listdir(i))
+            if ".gitkeep" in temp_file:
+              continue
+            else:
+              not_gitkeep = True
+              break
+
+
+        image_arr.append(os.path.join(i, temp_file))
       
       if is_unique(image_arr):
         image_arr_str = ''.join(image_arr)
