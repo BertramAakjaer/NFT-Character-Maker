@@ -15,6 +15,8 @@
         "rnjesus_procentage": 0.001
     },
 
-    "path": "Z:\\Random\\output",
-    "is_active": true
+    "path": "",
+    "is_active": false,
+
+    "border_offset": [37, 15]
   }
