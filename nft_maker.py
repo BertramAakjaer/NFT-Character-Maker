@@ -122,7 +122,7 @@ def combine_accesories(max_images, show_cli=False):
   out_numerate = 0
   duplicate_autostop = 0
 
-  with tqdm(total=max_images, disable=not show_cli) as pbar:
+  with tqdm(total=max_images, disable=False) as pbar:
     while out_numerate <= max_images - 1:
       
       if duplicate_autostop >= 500:
@@ -211,5 +211,5 @@ if __name__ == "__main__":
         clear_cache()
       if args.iterations:
         combine_accesories(args.iterations)
-      if args.borders and args.iterations:
+      if args.borders:
         apply_borders(output_path, config['border_offset'])

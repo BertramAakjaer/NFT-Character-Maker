@@ -10,7 +10,7 @@ def apply_borders(output_path, offset, show_cli=False):
     total_files = len(os.listdir(output_path))
 
     # Create a progress bar to track the border application process
-    with tqdm(total=total_files, disable=not show_cli) as pbar:
+    with tqdm(total=total_files, disable=False) as pbar:
         # Iterate over each file in the output path directory
         for filename in os.listdir(output_path):
             # Check if the file is a PNG image
