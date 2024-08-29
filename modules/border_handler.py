@@ -18,22 +18,22 @@ def apply_borders(output_path, offset, show_cli=False):
                 # Determine the border image based on the filename prefix
                 border_card_str = ""
 
-                if "rn" in filename[0:8]:
+                if "rn" in filename[-12:-4]:
                     border_card_str = "rnjesus.png"
                 
-                elif "le" in filename[0:8]:
+                elif "le" in filename[-12:-4]:
                     border_card_str = "legendary.png"
                 
-                elif "ep" in filename[0:8]:
+                elif "ep" in filename[-12:-4]:
                     border_card_str = "epic.png"
                 
-                elif "ra" in filename[0:8]:
+                elif "ra" in filename[-12:-4]:
                     border_card_str = "rare.png"
                 
-                elif "un" in filename[0:8]:
+                elif "un" in filename[-12:-4]:
                     border_card_str = "uncommon.png"
                 
-                elif "co" in filename[0:8]:
+                elif "co" in filename[-12:-4]:
                     border_card_str = "common.png"
 
                 else:

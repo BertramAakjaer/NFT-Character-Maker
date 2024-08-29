@@ -165,10 +165,10 @@ def combine_accesories(max_images, show_cli=False):
         md5_hash = str(hashlib.md5(image_arr_str.encode()).hexdigest())
               
         result_image = overlay_images(image_arr)
-        result_image.save(os.path.join(output_path, f"{rarity_code}_{md5_hash}.png"))
+        result_image.save(os.path.join(output_path, f"{md5_hash}_{rarity_code}.png"))
         
         if show_cli:
-          pbar.write(os.path.join(output_path, f"rubber_{md5_hash}.png created"))
+          pbar.write(os.path.join(output_path, f"{md5_hash}_{rarity_code}.png created"))
 
         duplicate_autostop = 0
         out_numerate += 1
