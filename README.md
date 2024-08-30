@@ -29,6 +29,7 @@ The concept is very simple we have different rairty types and each type has its 
 |     Common      |     `co`      |
 |     Uncommon    |      `un`     |
 |     Rare        |       `ra`    |
+|     Epic        |       `ep`    |
 |     Legenday    |     `le`      |
 |     RNGesus     |     `rn`      |
 
